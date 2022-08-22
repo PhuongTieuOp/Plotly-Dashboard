@@ -1,0 +1,79 @@
+<!-- ============================================================================= -->
+<!-- Homework                                                   -->
+<!--                                                            -->
+<!-- Module:    15-Interactive Dashboard and Visualisation, D3  -->
+<!-- Date:      15-8-2022                                       -->  
+<!-- Note:      since json file is used, we need to run         -->
+<!--            'python -m http.server' to use 'localhost:8000' -->
+<!-- ============================================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    h4 {text-align: center;}
+    p {text-align: center;}
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+    
+      <div class="col-md-12 jumbotron text-center" style="background: url(./Images/bacteria1.jpg)no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; " >
+        <h1 style="color: white;">Belly Button Biodiversity Dashboard</h1>
+        <h2 style="color: white;">Use the interactive charts below to explore the dataset</h2>
+        <h2 style="color: white;">OTU - Operational Taxonomic Units</h2>
+      </div>
+    </div>
+    <div class="row">   
+      <!-- Participant ID dropdown and demographic info -->
+      <div class="col-md-2">
+        <div class="well">         
+            <h4><strong>Test Participant ID:</strong></h4>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Demographic Info</h3>
+            </div>
+            <div id="sample-metadata" class="panel-body"></div>
+          </div>        
+        </div> <!-- well -->
+      </div>
+      <!-- Top 10 samples via bar chart  -->
+      <div class="col-md-5" padding=20px>   
+        <div class="well">         
+          <div id="bar-chart"></div>
+        </div>
+      </div>
+      <!-- Belly button scrub frequency in gauce chart  -->
+      <div class="col-md-5" padding=50px>            
+        <div class="well">             
+           <div id="gauge-chart"></div>    
+        </div>    
+      </div>
+    </div>    
+    <!-- Participant's all OTUs in bubble chart -->
+    <div class="row">
+      <div class="col-md-12">  
+        <div class="well">                 
+          <div id="bubble-chart"></div>
+        </div>           
+      </div>
+    </div>    
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/app.js"></script>    
+  <script src="data/samples.json"></script>
+  
+</body>
+
+</html>
