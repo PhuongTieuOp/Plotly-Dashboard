@@ -10,7 +10,7 @@ To provide an interactive dashboard allows user select and explore various condi
 
 ## Delivery:
 
-Upon selecting a tester (participant) from the dropdown box, its corresponding details will be displayed, a bar chart shows top 10 samples, a gauge chart shows wash frequence of the tester, a bubble chart shows sample sizes (bubble size) and types exist in the belly button.
+Upon selecting a tester (participant) from the dropdown box, his or her corresponding details will be displayed, a bar chart shows top 10 samples, a gauge chart shows wash frequence of the tester, a bubble chart shows sample sizes (bubble size) and types exist in the belly button.
 
 ### Tools:
 
