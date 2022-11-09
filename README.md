@@ -6,11 +6,11 @@ https://phuongtieuop.github.io/Plotly-Dashboard/
 
 ## Objectives:
 
-To provide an  dashboard allows user select and explore various conditions and sample data that exist in tester's belly button.
+To provide an interactive dashboard allows user select and explore various conditions and sample data that exist in tester's belly button.
 
 ## Delivery:
 
-Upon select of tester (participant), its corresponding details will be displayed, it also shows wash frequence of the tester.
+Upon selecting a tester (participant) from the dropdown box, its corresponding details will be displayed, a bar chart shows top 10 samples, a gauge chart shows wash frequence of the tester, a bubble chart shows sample sizes (bubble size) and types exist in the belly button.
 
 ### Tools:
 
